@@ -111,7 +111,7 @@ input::placeholder {
 }
 
 .container > h1 {
-  margin: 4rem 0;
+  margin: 2rem 0;
   text-decoration: underline;
   text-align: center;
   font-family: "Cinzel Decorative", serif;
@@ -198,25 +198,22 @@ input::placeholder {
 
 /* Skills */
 
-ul {
-  list-style-type: none;
-}
-
 .skills {
   display: block;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
+  padding: 0 auto;
   overflow: hidden;
 }
 
 .skill-row {
-  position: relative;
+  list-style-type: none;
   height: 16rem;
   width: 100%;
   margin: auto;
   overflow: hidden;
+  margin: 2rem 0;
 }
 
 .row-1,
@@ -225,33 +222,10 @@ ul {
   display: flex;
   align-items: center;
   width: 60rem;
-  margin-bottom: 10rem;
-}
-
-.row-2 {
-  flex-direction: row-reverse;
-}
-
-.row-1 {
-  animation: scroll-1 var(--transitionSpeed) linear infinite;
-}
-
-.row-2 {
-  animation: scroll-2 var(--transitionSpeed) linear infinite;
-}
-
-.row-3 {
-  animation: scroll-3 var(--transitionSpeed) linear infinite;
-}
-
-.row-1:hover,
-.row-2:hover,
-.row-3:hover {
-  animation-play-state: paused;
 }
 
 .techImg {
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   text-align: center;
   width: 100%;
 }
@@ -261,38 +235,10 @@ ul {
 }
 
 .techImg h3 {
-  margin: 1rem 3rem 2rem 3rem;
+  padding: 1rem 3rem 2rem 3rem;
   font-family: "Instrument Serif", serif;
   font-variant: small-caps;
   text-shadow: 0 0 0.2rem rgb(29, 4, 61);
-}
-
-/* Slideshow */
-@keyframes scroll-1 {
-  from {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(-84.4rem);
-  }
-}
-
-@keyframes scroll-2 {
-  from {
-    transform: translateX(8rem);
-  }
-  to {
-    transform: translateX(102rem);
-  }
-}
-
-@keyframes scroll-3 {
-  from {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(-121.6rem);
-  }
 }
 
 /* Responsiveness */
@@ -334,40 +280,5 @@ ul {
 
   .techImg img {
     height: 6rem;
-  }
-
-  .techImg h3 {
-    margin: 1rem 3rem 2rem 3rem;
-    font-family: "Instrument Serif", serif;
-    font-variant: small-caps;
-    text-shadow: 0 0 0.2rem rgb(29, 4, 61);
-  }
-
-  /* Slideshow */
-  @keyframes scroll-1 {
-    from {
-      transform: translateX(0px);
-    }
-    to {
-      transform: translateX(calc(var(--width) * -3));
-    }
-  }
-
-  @keyframes scroll-2 {
-    from {
-      transform: translateX(0px);
-    }
-    to {
-      transform: translateX(-94.1rem);
-    }
-  }
-
-  @keyframes scroll-3 {
-    from {
-      transform: translateX(0px);
-    }
-    to {
-      transform: translateX(-121.6rem);
-    }
   }
 }
